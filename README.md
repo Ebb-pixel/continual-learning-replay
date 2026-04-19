@@ -90,16 +90,22 @@ python -m scripts.run_experiment
 ### Generate Plots
 python -m src.evaluation.plot_results
 
-## Project Structure
-src/
-  models/        → neural network architecture
-  buffers/       → replay buffer implementations
-  training/      → training pipeline
-  strategies/    → prioritization methods (entropy, IG)
-  evaluation/    → plotting and analysis
+## 📁 Project Structure
 
-scripts/
-  run_experiment.py → experiment runner
-
-results/
-  → experiment outputs and plots
+```text
+continual-learning-replay/
+│
+├── src/
+│   ├── models/        # neural network architecture
+│   ├── buffers/       # replay buffer implementations
+│   ├── training/      # training pipeline
+│   ├── strategies/    # prioritization methods (entropy, IG)
+│   └── evaluation/    # plotting and analysis
+│
+├── scripts/
+│   └── run_experiment.py   # experiment runner
+│
+├── results/          # experiment outputs and plots
+│
+├── requirements.txt
+└── README.md
