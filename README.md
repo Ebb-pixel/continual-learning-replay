@@ -75,33 +75,22 @@ Results reveal a **coverage–salience tradeoff**:
   - Continual learning systems
   - Production ML pipelines
 
----
-
 ## 🚀 How to Run
 
 ### 1. Clone the repository
-
-```bash
 git clone https://github.com/Ebb-pixel/continual-learning-replay.git
 cd continual-learning-replay
 
-### 2. Install dependencies
-
-```bash
+### 2. Install Dependencies
 pip install -r requirements.txt
 
-
-👉 This is just **documentation**
-
----
-
-## In terminal (Git Bash / PowerShell) → you RUN this
-
-```bash
-pip install -r requirements.txt
+### 3. Run Experiments
 python -m scripts.run_experiment
+
+### Generate Plots
 python -m src.evaluation.plot_results
 
+## Project Structure
 src/
   models/        → neural network architecture
   buffers/       → replay buffer implementations
@@ -114,7 +103,3 @@ scripts/
 
 results/
   → experiment outputs and plots
-
-### Example Output
-B=100 | reservoir_uniform acc=0.70 forget=0.28
-B=200 | reservoir_ig acc=0.74 forget=0.24
