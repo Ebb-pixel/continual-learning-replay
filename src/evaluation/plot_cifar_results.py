@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 
 def plot_accuracy_vs_memory(
-    summary_csv: str = "results/split_mnist/summary.csv",
-    output_path: str = "results/split_mnist/accuracy_vs_memory.png",
+    summary_csv: str = "results/split_cifar10/accuracy_vs_memory.png",
+    output_path: str = "results/split_cifar10/forgetting_vs_memory.png",
 ) -> None:
     df = pd.read_csv(summary_csv)
 

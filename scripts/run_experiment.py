@@ -106,5 +106,5 @@ summary = (
 
 print(summary.head())
 
-df.to_csv("results/results.csv", index=False)
-summary.to_csv("results/summary.csv", index=False)
+df.to_csv("results/split_mnist/results.csv", index=False)
+summary.to_csv("results/split_mnist/summary.csv", index=False)
